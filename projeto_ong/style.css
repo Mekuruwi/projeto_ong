@@ -7,10 +7,13 @@ body {
 }
 
 header {
-  background-color: #f9c74f;
+  background-color: #2a64af;
   padding: 2rem;
   text-align: center;
   color: #222;
+}
+header h1 {
+  color: #fff;
 }
 
 section {
@@ -18,8 +21,8 @@ section {
   border-bottom: 1px solid #ddd;
 }
 
-h1, h2 {
-  color: #2a9d8f;
+section h1, h2 {
+  color: #0c2a6a;
 }
 
 footer {
@@ -27,4 +30,41 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
+}
+.paralax{
+  background-image: url(/imagens/imagem1.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  background-color: #2a64af;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+  margin: 0 1rem;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  transition: all 1s ease;  
+}
+nav a:hover {
+  transition: 0.5s;
+  border-radius: 15px;
+  padding: 0.5rem;
+  background-color: #c9f6f1;
+  transform: translateY(-20px);
+  color: black;
 }
