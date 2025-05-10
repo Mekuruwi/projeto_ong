@@ -107,3 +107,64 @@ nav a:hover {
   transform: translateY(-20px);
   color: black;
 }
+.valor {
+  width: 200px;
+  height: 200px;
+  background-color: #6657ef;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.valor .titulo,
+.valor .descricao {
+  position: absolute;
+  padding: 0 10px;
+  text-align: center;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.valor .descricao {
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(50px);
+  pointer-events: none;
+}
+
+.valor:hover .titulo {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.valor:hover .descricao {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.valor:hover {
+  transform: scale(1.1);
+  height: 200px;
+}
+.secao {
+  padding: 50px 20px;
+  scroll-margin-top: 330px;
+  width: 100%;
+  max-width: 100%;
+}
+.valores {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
